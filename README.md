@@ -1,4 +1,4 @@
-# Laporan Proyek Machine Learning - Dewi Wahidatul Karimah
+# Brain Stroke Prediction - Dewi Wahidatul Karimah
 
 ## Domain Proyek
 Stroke atau Cerebrovascular disease menurut World  Health  Organization  (WHO) adalah "tanda-tanda  klinis  yang  berkembang  cepat  akibat  gangguan fungsi  otak  fokal  atau  global  karena  adanya  sumbatan atau  pecahnya  pembuluh  darah  di  otak  dengan  gejala-gejala  yang  berlangsung  selama  24  jam  atau  lebih". 
