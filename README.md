@@ -113,6 +113,7 @@ Hyperparameter tuning adalah cara untuk mendapatkan parameter terbaik dari algor
 ## Evaluation
 
 Metrik evaluasi yang digunakan pada proyek ini adalah akurasi dan loss/error. Akurasi dan loss menggambarkan seberapa baik model neural network yang dibuat dapat memprediksi nilai target yang tepat sesuai dengan sasaran. Semakin tinggi nilai akurasi dan semakin kecil nilai loss maka semakin baik model dalam mengklasifikasikan data. Hasil akurasi dan loss dalam 10 epoch untuk data uji dan latih adalah sebagai berikut,
+
 ![download](https://github.com/dewi31/brain_stroke_prediction/assets/87901348/a97ece0b-6ec2-44f4-980b-9fdb69a4bf04)
 
 ![download (1)](https://github.com/dewi31/brain_stroke_prediction/assets/87901348/22940642-698d-44da-8b2b-86c8daadf3de)
