@@ -58,7 +58,8 @@ Univariate Analysis digunakan untuk menganalisis tiap variabel dalam suatu data
 #### Analisis data kontinu dari dataset
 
 Kolom/fitur yang termasuk data kontinu dari dataset adalah kolum 'age', 'avg_glucose_level', dan 'bmi'
---gambar
+![image](https://github.com/dewi31/brain_stroke_prediction/assets/87901348/82851c08-f62d-4ab8-8d73-4ccc9f0748dd)
+
 Dari gambar tersebut dapat dilihat bahwa umur terkecil 0.08 tahun dan terbesar 82 tahun, kadar glokosa rata-rata terkecil 55.12 dan terbesar 271.74, indeks massa tubuh terkecil 14 dan terbesar 48.9.
 
 #### Analisis data kategorikal dari dataset
@@ -107,13 +108,14 @@ Neural Network adalah sebuah cabang dari kecerdasan buatan (artificial intellige
 
 Hyperparameter tuning adalah cara untuk mendapatkan parameter terbaik dari algoritma dalam membangun model. Salah satu teknik dalam hyperparameter tuning yang digunakan adalah grid search. Grid search pada proyek ini digunakan untuk menentukan jumlah neuron dan optimizer terbaik. Berikut adalah hasil dari Grid Search pada proyek ini :
 
---gambar ss--
+![image](https://github.com/dewi31/brain_stroke_prediction/assets/87901348/c750b359-f982-470d-9a0f-0a144b39fba7)
 
 ## Evaluation
 
 Metrik evaluasi yang digunakan pada proyek ini adalah akurasi dan loss/error. Akurasi dan loss menggambarkan seberapa baik model neural network yang dibuat dapat memprediksi nilai target yang tepat sesuai dengan sasaran. Semakin tinggi nilai akurasi dan semakin kecil nilai loss maka semakin baik model dalam mengklasifikasikan data. Hasil akurasi dan loss dalam 10 epoch untuk data uji dan latih adalah sebagai berikut,
+![download](https://github.com/dewi31/brain_stroke_prediction/assets/87901348/a97ece0b-6ec2-44f4-980b-9fdb69a4bf04)
 
---gambar--
+![download (1)](https://github.com/dewi31/brain_stroke_prediction/assets/87901348/22940642-698d-44da-8b2b-86c8daadf3de)
 
 dari gambar grafik diatas dapat dilihat bahwa model tidak overfitting meskipun data tidak seimbang. Nilai akhir akurasi dan loss untuk data latih dan uji adalah sebagai berikut,
 |            | akurasi  | loss |
