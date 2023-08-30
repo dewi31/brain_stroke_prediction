@@ -57,6 +57,7 @@ Univariate Analysis digunakan untuk menganalisis tiap variabel dalam suatu data
 
 Kolom/fitur yang termasuk data kontinu dari dataset adalah kolum 'age', 'avg_glucose_level', dan 'bmi'
 ![Proyek-Predictive-Analysis-ipynb-Colaboratory (1)](https://github.com/dewi31/brain_stroke_prediction/assets/87901348/66e02cb7-d24c-4a4a-936c-848ff917a2a1)
+
 Gambar 1. Deskripsi statistik data kontinu
 
 Dari gambar tersebut dapat dilihat bahwa umur terkecil 0.08 tahun dan terbesar 82 tahun, kadar glokosa rata-rata terkecil 55.12 dan terbesar 271.74, indeks massa tubuh terkecil 14 dan terbesar 48.9.
@@ -75,6 +76,7 @@ Jumlah persebaran dari data kategorikal dapat dilihat pada tabel berikut,
 | Residence_type | object    |   Rural : 2449, Urban : 2532                                              |
 | smoking_status | object    |   Unknown : 1500, formerly smoked : 867, never smoked : 1838, smokes :776 |
 | stroke         | int64     |   0 : 4733, 1 : 248                                                       |
+
 Tabel 1. Persebaran data kategorikal
 
 Dapat dilihat dari tabel di atas, persebaran data tidak merata terutama fitur target 'stroke' yang tidak mengalami stroke berjumlah 4733 dan yang mengalami stroke berjumlah 248.
