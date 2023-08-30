@@ -108,7 +108,8 @@ Neural Network adalah sebuah cabang dari kecerdasan buatan (artificial intellige
 
 Hyperparameter tuning adalah cara untuk mendapatkan parameter terbaik dari algoritma dalam membangun model. Salah satu teknik dalam hyperparameter tuning yang digunakan adalah grid search. Grid search pada proyek ini digunakan untuk menentukan jumlah neuron dan optimizer terbaik. Berikut adalah hasil dari Grid Search pada proyek ini :
 
-![image](https://github.com/dewi31/brain_stroke_prediction/assets/87901348/c750b359-f982-470d-9a0f-0a144b39fba7)
+![image](https://github.com/dewi31/brain_stroke_prediction/assets/87901348/333c666a-f496-4541-893e-eacf547f2a40)
+
 
 ## Evaluation
 
