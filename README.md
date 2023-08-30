@@ -1,11 +1,9 @@
 # Brain Stroke Prediction - Dewi Wahidatul Karimah
 
 ## Domain Proyek
-Stroke atau Cerebrovascular disease menurut World  Health  Organization  (WHO) adalah "tanda-tanda  klinis  yang  berkembang  cepat  akibat  gangguan fungsi  otak  fokal  atau  global  karena  adanya  sumbatan atau  pecahnya  pembuluh  darah  di  otak  dengan  gejala-gejala  yang  berlangsung  selama  24  jam  atau  lebih". 
+Stroke atau *Cerebrovascular disease* menurut *World  Health  Organization*  (WHO) adalah "tanda-tanda  klinis  yang  berkembang  cepat  akibat  gangguan fungsi  otak  fokal  atau  global  karena  adanya  sumbatan atau  pecahnya  pembuluh  darah  di  otak  dengan  gejala-gejala  yang  berlangsung  selama  24  jam  atau  lebih" [1]. Menurut Data *World Stroke Organization* setiap tahunnya ada 13,7 kasus baru stroke dan sekitar 5,5 juta kematian akibat penyakit stroke. Sedangkan kejadian stroke di Indonesia menurut Data Riskesdas 2013 prevalensi stroke nasional 12,1 per mil, sedangkan pada Riskesdas 2018 prevalensi stroke 10,9 per mil, tertinggi di Provinsi Kalimantan Timur (14,7 per mil), terendah di Provinsi Papua (4,1 per mil) [2].
 
-Beberapa cara diagnosis stroke (Gold Standart) diantaranya menggunakan Computed Tomography ( CT ) scan, Magnetic Resonance Imaging (MRI) dan Elektrokardiogram (EKG atau ECG). Penerapan gold standart tersebut masih memiliki kekurangan yakni pasien yang tidak memungkinkan untuk berpindah tempat, mahalnya biaya, tidak semua rumah sakit memiliki peralatan tersebut, memakan waktu lebih lama dan efek radiasi. Karena kekurangan tersebut,  maka diperlukan sebuah sistem prediksi diagnosis penyakit stroke berbasis kecerdasan buatan sebagai alat pendukung keputusan untuk memprediksi penyakit stroke secara akurat dan efisien. 
-
-Referensi: [Klasifikasi Stroke Berdasarkan Kelainan Patologis dengan Learning Vector Quantization ](https://media.neliti.com/media/publications/69296-ID-klasifikasi-stroke-berdasarkan-kelainan.pdf) 
+Beberapa cara diagnosis stroke (*Gold Standart*) telah dilakukan diantaranya *Computed Tomography* ( CT ) *scan*, *Magnetic Resonance Imaging* (MRI) dan *Elektrokardiogram* (EKG atau ECG). Penerapan *gold standart* tersebut masih memiliki kekurangan yakni pasien yang tidak memungkinkan untuk berpindah tempat, mahalnya biaya, tidak semua rumah sakit memiliki peralatan tersebut, memakan waktu lebih lama dan efek radiasi. Karena kekurangan tersebut,  maka diperlukan sebuah sistem prediksi diagnosis penyakit stroke berbasis kecerdasan buatan sebagai alat pendukung keputusan untuk memprediksi penyakit stroke secara akurat dan efisien [1]. 
 
 ## Business Understanding
 
@@ -58,7 +56,8 @@ Univariate Analysis digunakan untuk menganalisis tiap variabel dalam suatu data
 #### Analisis data kontinu dari dataset
 
 Kolom/fitur yang termasuk data kontinu dari dataset adalah kolum 'age', 'avg_glucose_level', dan 'bmi'
-![image](https://github.com/dewi31/brain_stroke_prediction/assets/87901348/82851c08-f62d-4ab8-8d73-4ccc9f0748dd)
+![Proyek-Predictive-Analysis-ipynb-Colaboratory (1)](https://github.com/dewi31/brain_stroke_prediction/assets/87901348/66e02cb7-d24c-4a4a-936c-848ff917a2a1)
+Gambar 1. Deskripsi statistik data kontinu
 
 Dari gambar tersebut dapat dilihat bahwa umur terkecil 0.08 tahun dan terbesar 82 tahun, kadar glokosa rata-rata terkecil 55.12 dan terbesar 271.74, indeks massa tubuh terkecil 14 dan terbesar 48.9.
 
@@ -76,6 +75,7 @@ Jumlah persebaran dari data kategorikal dapat dilihat pada tabel berikut,
 | Residence_type | object    |   Rural : 2449, Urban : 2532                                              |
 | smoking_status | object    |   Unknown : 1500, formerly smoked : 867, never smoked : 1838, smokes :776 |
 | stroke         | int64     |   0 : 4733, 1 : 248                                                       |
+Tabel 1. Persebaran data kategorikal
 
 Dapat dilihat dari tabel di atas, persebaran data tidak merata terutama fitur target 'stroke' yang tidak mengalami stroke berjumlah 4733 dan yang mengalami stroke berjumlah 248.
 
