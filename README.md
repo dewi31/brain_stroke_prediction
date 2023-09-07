@@ -56,11 +56,21 @@ Univariate Analysis digunakan untuk menganalisis tiap variabel dalam suatu data
 #### Analisis data kontinu dari dataset
 
 Kolom/fitur yang termasuk data kontinu dari dataset adalah kolum 'age', 'avg_glucose_level', dan 'bmi'
-![Proyek-Predictive-Analysis-ipynb-Colaboratory (1)](https://github.com/dewi31/brain_stroke_prediction/assets/87901348/66e02cb7-d24c-4a4a-936c-848ff917a2a1)
 
-Gambar 1. Deskripsi statistik data kontinu
+|   Parameter   |   age  | avg_glucose_level |  bmi  |
+|---------------|--------|-------------------|-------|
+| count         | 4981   |   4981            | 4981  |
+| mean          | 43.42  |   105.94          | 28.50 |
+| std           | 22.66  |   45.08           | 6.79  |
+| min           | 0.08   |   55.12           | 14    |
+| 25%           | 25     |   77.23           | 23.7  |
+| 50%           | 45     |   91.85           | 28.1  |
+| 75%           | 61     |   113.86          | 32.6  |
+| max           | 82     |   271.74          | 48.9  |
 
-Dari gambar tersebut dapat dilihat bahwa umur terkecil 0.08 tahun dan terbesar 82 tahun, kadar glokosa rata-rata terkecil 55.12 dan terbesar 271.74, indeks massa tubuh terkecil 14 dan terbesar 48.9.
+Tabel 1. Deskripsi statistik data kontinu
+
+Dari tabel tersebut dapat dilihat bahwa umur terkecil 0.08 tahun dan terbesar 82 tahun, kadar glokosa rata-rata terkecil 55.12 dan terbesar 271.74, indeks massa tubuh terkecil 14 dan terbesar 48.9.
 
 #### Analisis data kategorikal dari dataset
 
@@ -77,7 +87,7 @@ Jumlah persebaran dari data kategorikal dapat dilihat pada tabel berikut,
 | smoking_status | object    |   Unknown : 1500, formerly smoked : 867, never smoked : 1838, smokes :776 |
 | stroke         | int64     |   0 : 4733, 1 : 248                                                       |
 
-Tabel 1. Persebaran data kategorikal
+Tabel 2. Persebaran data kategorikal
 
 Dapat dilihat dari tabel di atas, persebaran data tidak merata terutama fitur target 'stroke' yang tidak mengalami stroke berjumlah 4733 dan yang mengalami stroke berjumlah 248.
 
@@ -114,9 +124,24 @@ Dapat dilihat dari tabel di atas, persebaran data tidak merata terutama fitur ta
 
 *Hyperparameter tuning* adalah cara untuk mendapatkan parameter terbaik dari algoritma dalam membangun model. Salah satu teknik dalam hyperparameter tuning yang digunakan adalah *grid search*. *Grid search* pada proyek ini digunakan untuk menentukan jumlah neuron dan optimizer terbaik. Berikut adalah hasil dari *Grid Search* pada proyek ini :
 
-![image](https://github.com/dewi31/brain_stroke_prediction/assets/87901348/26294a46-0d49-4cf2-bbf3-6979d66df660)
+|   Akurasi   |   Neuron  | Optimizer |
+|---------------|--------|-------------------|
+|  0.527026     | 8   |   SGD         | 
+|  0.925629     | 8  |   RMSprop         | 
+|   0.881055      | 8  |   Adam           | 
+|   0.446963        | 16   |   SGD          | 
+|   0.873235       | 16    |   RMSprop           | 
+|    0.925001       | 16     |   Adam          | 
+|     0.547828      | 24    |   SGD          | 
+| 0.934928          | 24     |   RMSprop          |
+| 0.885801       | 24  |   Adam           | 
+| 0.508364         | 32   |   SGD          | 
+|  0.827392      | 32   |   RMSprop           | 
+|  0.922570         | 32  |   Adam          | 
 
-Gambar 2. Hasil metode *Grid Search*
+Tabel 3. Hasil metode *Grid Search*
+
+Dari Tabel 3. dapat dilihat parameter terbaik menggunakan metode *Grid Search* dalah jumlah neuron = 8 dan optimizer = RMSprop dengan akurasi sebesar 0.934928.
 
 ## Evaluation
 
@@ -126,11 +151,11 @@ Metrik evaluasi yang digunakan pada proyek ini adalah akurasi, *loss/error*, dan
 
 ![image](https://github.com/dewi31/brain_stroke_prediction/assets/87901348/46dfa654-5dbb-4f34-9765-b5bfa9edb6d0)
 
-Gambar 3. Grafik akurasi *training* dan *validation* 
+Gambar 1. Grafik akurasi *training* dan *validation* 
 
 ![image](https://github.com/dewi31/brain_stroke_prediction/assets/87901348/daf0a600-d6f6-4eb5-8fbc-3a9768b41fe3)
 
-Gambar 4. Grafik *loss training* dan *validation*
+Gambar 2. Grafik *loss training* dan *validation*
 
 dari gambar grafik diatas dapat dilihat bahwa model sedikit *overfitting* meskipun data telah diubh menjadi seimbang menggunakan metode SMOTE. Nilai akhir akurasi dan *los*s untuk data latih dan uji adalah sebagai berikut,
 
@@ -139,7 +164,7 @@ dari gambar grafik diatas dapat dilihat bahwa model sedikit *overfitting* meskip
 | data latih |     0.97 | 0.11 |
 | data uji   |     0.96 | 0.13 |
 
-Tabel 2. Hasil akhir akurasi dan *loss* pada data latih dan uji
+Tabel 4. Hasil akhir akurasi dan *loss* pada data latih dan uji
 
 + *Confusion Matrix*
   Confusion Matrix digunakan untuk menghitung berbagai *performance metrics* untuk mengukur kinerja model yang telah dibuat. Pada penelitian ini performance metrics yang digunakan adalah presisi, *recall*, dan *F1 score*. Presisi merupakan rasio prediksi benar positif dibandingkan dengan keseluruhan hasil yang diprediksi positf. *Recall* merupakan rasio prediksi benar positif dibandingkan dengan keseluruhan data yang benar positif. *F1 score* merupakan perbandingan rata-rata presisi dan *recall* yang dibobotkan. Persamaan *performance metrics* tersebut dapat ditulis sebgai berikut,
@@ -154,15 +179,15 @@ Hasil *confusion matrix* pada data uji dengan menggunakan parameter terbaik adal
 
 ![image](https://github.com/dewi31/brain_stroke_prediction/assets/87901348/20471811-722f-41dd-b92e-cbe65a8f17b8)
 
-Gambar 5. Hasil  *Confusion Matrix* 
+Gambar 3. Hasil  *Confusion Matrix* 
 
-Dari gambar 5. dapat dilihat bahwa data yang diprediksi benar negatif stroke sebesar 929, data yang diprediksi benar positif stroke sebesar 887, data yang seharusnya negatif stroke tetapi diprediksi positif stroke sebesar 12, dan data yng seharusnya positif stroke tetapi diprediksi negatif stroke sebesar 66. Setelah didapatkan *confusion matrix* dihitung *performance metrics* dan dihasilkan nilai sebagai berikut,
+Dari gambar 3. dapat dilihat bahwa data yang diprediksi benar negatif stroke sebesar 929, data yang diprediksi benar positif stroke sebesar 887, data yang seharusnya negatif stroke tetapi diprediksi positif stroke sebesar 12, dan data yng seharusnya positif stroke tetapi diprediksi negatif stroke sebesar 66. Setelah didapatkan *confusion matrix* dihitung *performance metrics* dan dihasilkan nilai sebagai berikut,
 
 |  Presisi   |  recall  | f1 score |
 |------------|----------|----------|
 |       0.99 |     0.93 |     0.96 |
 
-Tabel 3. Hasil *performance metrics* 
+Tabel 5. Hasil *performance metrics* 
 
 ## REFERENCES
 
